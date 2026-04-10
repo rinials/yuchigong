@@ -66,8 +66,11 @@
             cursor: pointer;
             margin-top: 8px;
         }
-        input[type="submit"]:active {
+        input[type="submit"]:hover {
             background-color: #096dd9;
+        }
+        input[type="submit"]:active {
+            background-color: #0050b3;
         }
     </style>
 </head>
@@ -77,11 +80,11 @@
         <form action="/api/login" method="post">
             <div class="form-group">
                 <label for="account">账号</label>
-                <input type="text" id="account" name="account" placeholder="请输入账号">
+                <input type="text" id="account" name="account" placeholder="请输入账号" required>
             </div>
             <div class="form-group">
                 <label for="password">密码</label>
-                <input type="password" id="password" name="password" placeholder="请输入密码">
+                <input type="password" id="password" name="password" placeholder="请输入密码" required>
             </div>
             <input type="submit" value="登录">
         </form>
